@@ -63,8 +63,8 @@ class _TargetWidgetState extends State<TargetWidget> {
       return;
     }
 
-    RenderBox renderBox = context.findRenderObject();
-    final RenderBox overlay = Overlay.of(context).context.findRenderObject();
+    RenderBox renderBox = context.findRenderObject() as RenderBox;
+    final RenderBox overlay = Overlay.of(context).context.findRenderObject() as RenderBox;
 
     var targetGlobalCenter =
         renderBox.localToGlobal(renderBox.size.center(Offset.zero), ancestor: overlay);
