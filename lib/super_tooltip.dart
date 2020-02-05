@@ -743,7 +743,7 @@ class _BubbleShape extends ShapeBorder {
               rect.bottom)
 
           // up to arrow tip   \
-          ..lineTo(targetCenter.dx, targetCenter.dy - arrowTipDistance)
+          ..lineTo(targetCenter.dx, rect.bottom + arrowTipDistance)
 
           //  down /
           ..lineTo(
